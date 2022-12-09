@@ -1,6 +1,5 @@
 from django.shortcuts import render
-
-# Create your views here.
+from things.forms import ThingForm
 
 def home(request):
-    return render(request, 'page.html')
+    return render(request, 'home.html', {'form': ThingForm})
